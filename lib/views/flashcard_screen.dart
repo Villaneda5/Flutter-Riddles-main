@@ -110,7 +110,7 @@ class _NewCardState extends State<NewCard> {
                     ),
                     onPressed: () => controller.unswipe(),
                     child: const Text(
-                      "Reorder Cards",
+                      "REAORDENAR TARJETAS",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 15,
@@ -138,7 +138,7 @@ class _NewCardState extends State<NewCard> {
                       );
                     },
                     child: const Text(
-                      "Start Quiz",
+                      "INICIAR QUIZ",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 15,

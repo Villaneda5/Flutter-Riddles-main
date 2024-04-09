@@ -82,7 +82,7 @@ class FlipCardsWidget extends StatelessWidget {
                   ),
                   const Spacer(),
                   Text(
-                    "Tap to Flip",
+                    "TOQUE PARA VOLTEAR",
                     style: Theme.of(context)
                         .textTheme
                         .bodySmall!
@@ -155,7 +155,7 @@ class FlipCardsWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Answer",
+                        "RESPUESTA",
                         style: Theme.of(context).textTheme.bodySmall!.copyWith(
                               color: Colors.white,
                               fontSize: 15,

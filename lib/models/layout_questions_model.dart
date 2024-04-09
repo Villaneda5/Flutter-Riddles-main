@@ -46,104 +46,68 @@ class LayOutOption {
 
 final layOutQuestionsList = [
   LayOutQuestion(
-    text: "cual seria la forma mas facil de ahorrar?",
+    text: "\t¿Qué es el patrimonio neto?",
     options: [
-      const LayOutOption(text: "finanzas sexuales", isCorrect: true),
-      const LayOutOption(text: "Row", isCorrect: false),
-      const LayOutOption(text: "CrossAxisAlignment", isCorrect: false),
-      const LayOutOption(text: "mainAxisSize", isCorrect: false),
+      const LayOutOption(text: "Lo que tienes menos lo que debes.", isCorrect: true),
+      const LayOutOption(text: "Todos los ingresos.", isCorrect: false),
+      const LayOutOption(text: "El valor en una cuenta bancaria.", isCorrect: false),
+      const LayOutOption(text: "Los bienes y propiedades de una persona.", isCorrect: false),
     ],
     id: 0,
     correctAnswer:
-        const LayOutOption(text: "MainAxisAlignment", isCorrect: true),
+        const LayOutOption(text: "Lo que tienes menos lo que debes.", isCorrect: true),
   ),
   LayOutQuestion(
     text:
-        "I allow widgets to expand and contract based on available space. You'll always find me inside a Flex. Who am I?",
+        "\t¿Cuál de las siguientes opciones es un pasivo?",
     options: [
-      const LayOutOption(text: "Flexible ", isCorrect: true),
-      const LayOutOption(text: "Expanded", isCorrect: false),
-      const LayOutOption(text: "Flex", isCorrect: false),
-      const LayOutOption(text: "mainAxisSpacing", isCorrect: false),
+      const LayOutOption(text: "Acciones de una empresa. ", isCorrect: false),
+      const LayOutOption(text: "Cuenta de ahorros.", isCorrect: false),
+      const LayOutOption(text: "Préstamo estudiantil.", isCorrect: true),
+      const LayOutOption(text: "Ingresos mensuales.", isCorrect: false),
     ],
     id: 1,
-    correctAnswer: const LayOutOption(text: "Flexible", isCorrect: true),
+    correctAnswer: const LayOutOption(text: "Préstamo estudiantil.", isCorrect: true),
   ),
 
   LayOutQuestion(
     text:
-        "I create an invisible bounding box that controls my child's width and height. What am I?",
+        "\t¿Qué es el presupuesto?",
     options: [
-      const LayOutOption(text: "Container ", isCorrect: true),
-      const LayOutOption(text: "SizedBox", isCorrect: false),
-      const LayOutOption(text: "Card", isCorrect: false),
-      const LayOutOption(text: "Row", isCorrect: false),
+      const LayOutOption(text: "Un plan para gestionar el dinero. ", isCorrect: true),
+      const LayOutOption(text: "El dinero ahorrado en una cuenta bancaria.", isCorrect: false),
+      const LayOutOption(text: "Un préstamo para comprar una casa.", isCorrect: false),
+      const LayOutOption(text: "Un documento legal para pagar impuestos.", isCorrect: false),
     ],
     id: 2,
-    correctAnswer: const LayOutOption(text: "Container", isCorrect: true),
+    correctAnswer: const LayOutOption(text: "Un plan para gestionar el dinero.", isCorrect: true),
   ),
 
   LayOutQuestion(
     text:
-        "I align my children widgets to the start or end of the row. Who am I?",
+        "\t¿Cuál de las siguientes opciones es una forma de ingreso variable?",
     options: [
-      const LayOutOption(text: "SingleChildScrollView", isCorrect: false),
-      const LayOutOption(text: "crossAxisCount", isCorrect: false),
-      const LayOutOption(text: "MainAxisAlignment ", isCorrect: true),
-      const LayOutOption(text: "crossAxisSpacing", isCorrect: false),
+      const LayOutOption(text: "Salario mensual.", isCorrect: false),
+      const LayOutOption(text: "Trabajos temporales.", isCorrect: true),
+      const LayOutOption(text: "Inversiones en el mercado de valores.", isCorrect: false),
+      const LayOutOption(text: "Dinero ganado en una lotería.", isCorrect: false),
     ],
     id: 3,
     correctAnswer:
-        const LayOutOption(text: "MainAxisAlignment ", isCorrect: true),
+        const LayOutOption(text: "Trabajos temporales", isCorrect: true),
   ),
   // other 4
   LayOutQuestion(
     text:
-        "I'm a widget that lets you precisely position children using x, y coordinates. Who am I?",
+        "\t¿Qué es el valor temporal del dinero?",
     options: [
-      const LayOutOption(text: "Align", isCorrect: false),
-      const LayOutOption(text: "FittedBox", isCorrect: false),
-      const LayOutOption(text: "Postioned", isCorrect: false),
-      const LayOutOption(text: "Stack ", isCorrect: true),
+      const LayOutOption(text: "El valor de bienes y servicios en el mercado.", isCorrect: false),
+      const LayOutOption(text: "El valor de los ahorros en una cuenta bancaria.", isCorrect: false),
+      const LayOutOption(text: "El valor de los ingresos mensuales.", isCorrect: false),
+      const LayOutOption(text: "El dinero hoy vale más que mañana. ", isCorrect: true),
     ],
     id: 4,
-    correctAnswer: const LayOutOption(text: "Stack ", isCorrect: true),
+    correctAnswer: const LayOutOption(text: "El dinero hoy vale más que mañana.", isCorrect: true),
   ),
-  LayOutQuestion(
-    text: "I'm a horizontal version of Column. Who am I?",
-    options: [
-      const LayOutOption(text: "Row ", isCorrect: true),
-      const LayOutOption(text: "Divider", isCorrect: false),
-      const LayOutOption(text: "Column", isCorrect: false),
-      const LayOutOption(text: "Stack", isCorrect: false),
-    ],
-    id: 5,
-    correctAnswer: const LayOutOption(text: "Row", isCorrect: true),
-  ),
-
-  LayOutQuestion(
-    text:
-        "I align widgets to the top, bottom, center inside a Column. What am I?",
-    options: [
-      const LayOutOption(text: "Row", isCorrect: false),
-      const LayOutOption(text: "Align", isCorrect: false),
-      const LayOutOption(text: "Spacer", isCorrect: false),
-      const LayOutOption(text: "MainAxisAlignment ", isCorrect: true),
-    ],
-    id: 6,
-    correctAnswer:
-        const LayOutOption(text: "MainAxisAlignment ", isCorrect: true),
-  ),
-  LayOutQuestion(
-    text:
-        "I align my Row or Column children differently based on available space. Who am I?",
-    options: [
-      const LayOutOption(text: "Expanded", isCorrect: false),
-      const LayOutOption(text: "Flex ", isCorrect: true),
-      const LayOutOption(text: "FittedBox", isCorrect: false),
-      const LayOutOption(text: "Wrap", isCorrect: false),
-    ],
-    id: 7,
-    correctAnswer: const LayOutOption(text: "Scoped Model", isCorrect: true),
-  ),
+  
 ];

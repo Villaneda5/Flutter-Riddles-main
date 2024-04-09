@@ -50,7 +50,7 @@ class ResultsScreen extends StatelessWidget {
                 text: TextSpan(
                   children: [
                     TextSpan(
-                      text: "Results On Your ",
+                      text: "RESULTADOS.",
                       style:
                           Theme.of(context).textTheme.headlineSmall!.copyWith(
                                 color: Colors.white,
@@ -58,17 +58,9 @@ class ResultsScreen extends StatelessWidget {
                                 fontWeight: FontWeight.w400,
                               ),
                     ),
-                    for (var i = 0; i < "Riddles!!!".length; i++) ...[
-                      TextSpan(
-                        text: "Riddles!!!"[i],
-                        style:
-                            Theme.of(context).textTheme.headlineSmall!.copyWith(
-                                  fontSize: 18 + i.toDouble(),
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                      ),
-                    ]
+                    
+                      
+                    
                   ],
                 ),
               ),
@@ -101,7 +93,7 @@ class ResultsScreen extends StatelessWidget {
                   Navigator.popUntil(context, (route) => route.isFirst);
                 },
                 child: const Text(
-                  "Take another test",
+                  "HAZ OTRA PRUEBA",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 15,

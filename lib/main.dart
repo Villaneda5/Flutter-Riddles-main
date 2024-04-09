@@ -21,10 +21,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'FINANZAS TRIVIA',
+      title: 'DINEROIQ',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
+          seedColor: Color.fromARGB(255, 180, 166, 35),
         ),
         useMaterial3: true,
       ),

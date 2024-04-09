@@ -48,7 +48,7 @@ final List<FlutterTopics> flutterTopicsList = [
     id: 3,
     topicColor: cardColor,
     topicIcon: CupertinoIcons.rectangle_arrow_up_right_arrow_down_left,
-    topicName: "PLANIFICACIÓN DEL FUTURO",
+    topicName: "FUNDAMENTOS FINANCIEROS",
     topicQuestions: layOutQuestionsList,
   ),
 ];

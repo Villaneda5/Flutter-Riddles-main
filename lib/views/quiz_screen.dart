@@ -109,7 +109,7 @@ class _QuizScreenState extends State<QuizScreen> {
                 Row(
                   children: [
                     Text(
-                      "${widget.topicType} Riddles",
+                      "${widget.topicType} ACERTIJOS",
                       style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                           color: Colors.white,
                           fontSize: 20,
@@ -173,7 +173,7 @@ class _QuizScreenState extends State<QuizScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Question $_questionNumber/${widget.questionlenght.length}",
+                            "PREGUNTA $_questionNumber/${widget.questionlenght.length}",
                             style: TextStyle(
                                 fontSize: 16, color: Colors.grey.shade500),
                           ),
@@ -363,8 +363,8 @@ class _QuizScreenState extends State<QuizScreen> {
       },
       child: Text(
         _questionNumber < widget.questionlenght.length
-            ? 'Next Question'
-            : 'Result',
+            ? 'PRÓXIMA PREGUNTA'
+            : 'RESULTADO',
         style: Theme.of(context).textTheme.bodySmall!.copyWith(
               color: Colors.white,
               fontSize: 16,
