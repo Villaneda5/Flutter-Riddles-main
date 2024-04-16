@@ -19,7 +19,7 @@ class QuizScreen extends StatefulWidget {
 }
 
 class _QuizScreenState extends State<QuizScreen> {
-  int questionTimerSeconds = 20;
+  int questionTimerSeconds = 40;
   Timer? _timer;
   int _questionNumber = 1;
   PageController _controller = PageController();
@@ -140,7 +140,7 @@ class _QuizScreenState extends State<QuizScreen> {
                           borderRadius: BorderRadius.circular(12),
                           child: LinearProgressIndicator(
                             minHeight: 20,
-                            value: 1 - (questionTimerSeconds / 20),
+                            value: 1 - (questionTimerSeconds / 40),
                             backgroundColor: Colors.blue.shade100,
                             color: const Color.fromARGB(255, 241, 218, 9),
                             valueColor: const AlwaysStoppedAnimation(bgColor),
@@ -320,7 +320,7 @@ class _QuizScreenState extends State<QuizScreen> {
     for (var question in widget.questionlenght) {
       question.isLocked = false;
     }
-    questionTimerSeconds = 20;
+    questionTimerSeconds = 40;
   }
 
   ElevatedButton buildElevatedButton() {

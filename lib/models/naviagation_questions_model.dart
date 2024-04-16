@@ -43,127 +43,72 @@ class NavigationsOption {
 final navigateQuestionsList = [
   NavigateQuestion(
     text:
-        "I am a widget that manages a stack of child widgets and allows for navigating between them. What am I?",
+        "¿Por qué es importante la planificación financiera a largo plazo?",
     options: [
-      const NavigationsOption(text: "Route", isCorrect: false),
-      const NavigationsOption(text: "Scaffold", isCorrect: false),
-      const NavigationsOption(text: "Navigator", isCorrect: true),
-      const NavigationsOption(text: "PageView", isCorrect: false),
+      const NavigationsOption(text: "Estabilidad financiera.", isCorrect: true),
+      const NavigationsOption(text: "Compras de lujo.", isCorrect: false),
+      const NavigationsOption(text: "Decisiones impulsivas.", isCorrect: false),
+      const NavigationsOption(text: "Gasto excesivo.", isCorrect: false),
     ],
     id: 0,
-    correctAnswer: const NavigationsOption(text: "Navigator", isCorrect: true),
+    correctAnswer: const NavigationsOption(text: "Es importante planificar financieramente a largo plazo para garantizar estabilidad y alcanzar objetivos como la jubilación.", isCorrect: true),
   ),
   NavigateQuestion(
     text:
-        " I am a method that removes the current route from the stack and returns to the previous route. What am I?",
+        "¿Qué es un fondo de emergencia?",
     options: [
-      const NavigationsOption(text: "Navigator.push()", isCorrect: false),
-      const NavigationsOption(text: "Navigator.pop()", isCorrect: true),
-      const NavigationsOption(
-          text: "Navigator.removeRoute()", isCorrect: false),
-      const NavigationsOption(text: " Route.dispose()", isCorrect: false),
+      const NavigationsOption(text: "Para compras de lujo.", isCorrect: false),
+      const NavigationsOption(text: "Para gastos diarios.", isCorrect: false),
+      const NavigationsOption(text: "Para imprevistos financieros.", isCorrect: true),
+      const NavigationsOption(text: "Para vacaciones.", isCorrect: false),
+      
+      
     ],
     id: 1,
     correctAnswer:
-        const NavigationsOption(text: "Navigator.pop()", isCorrect: true),
+        const NavigationsOption(text:  "Un fondo de emergencia es un ahorro reservado específicamente para situaciones imprevistas, como gastos médicos inesperados o pérdida de empleo.", isCorrect: true),
   ),
   NavigateQuestion(
     text:
-        "I am a widget property that must be passed to navigation methods like Navigator.push() to specify the next screen. What am I?",
+        "¿Por qué es importante diversificar las inversiones?",
     options: [
-      const NavigationsOption(text: "context", isCorrect: true),
-      const NavigationsOption(text: "Scaffold", isCorrect: false),
-      const NavigationsOption(text: "State", isCorrect: false),
-      const NavigationsOption(text: "Build", isCorrect: false),
+      const NavigationsOption(text: "Reducir el riesgo.", isCorrect: true),
+      const NavigationsOption(text: "Aumentar el riesgo.", isCorrect: false),
+      const NavigationsOption(text: "Gastar más dinero.", isCorrect: false),
+      const NavigationsOption(text: "Invertir en una sola opción.", isCorrect: false),
     ],
     id: 2,
-    correctAnswer: const NavigationsOption(text: "context", isCorrect: true),
+    correctAnswer: const NavigationsOption(text: "Diversificar las inversiones reduce el riesgo al distribuir los fondos en diferentes activos.", isCorrect: true),
   ),
 
   NavigateQuestion(
     text:
-        " I am the method that closes all routes in the history stack to pop to the first route. What am I?",
+        "¿Qué es un objetivo financiero a corto plazo?",
     options: [
-      const NavigationsOption(text: "Navigator.popUntil()", isCorrect: true),
-      const NavigationsOption(text: " Navigator.reset()", isCorrect: false),
-      const NavigationsOption(text: " Navigator.exitAll()", isCorrect: false),
-      const NavigationsOption(text: "Navigator.clear()", isCorrect: false),
+      const NavigationsOption(text: "Comprar una casa.", isCorrect: false),
+      const NavigationsOption(text: "Ahorrar para la jubilación.", isCorrect: false),
+      const NavigationsOption(text: "Planificar unas vacaciones.", isCorrect: false),
+      const NavigationsOption(text: "Pagar la deuda estudiantil.", isCorrect: true),
     ],
     id: 3,
     correctAnswer:
-        const NavigationsOption(text: "Navigator.popUntil()", isCorrect: true),
+        const NavigationsOption(text: "Un objetivo financiero a corto plazo es una meta financiera que se espera alcanzar en un período relativamente corto, generalmente dentro de un año.", isCorrect: true),
   ),
-  // other 4
+  
   NavigateQuestion(
     text:
-        " I am a method that adds a named route to the top of the navigator stack. Who am I?",
+        "¿Qué es el interés compuesto?",
     options: [
-      const NavigationsOption(text: "Navigator.navigate()", isCorrect: false),
-      const NavigationsOption(text: " Navigator.openRoute()", isCorrect: false),
-      const NavigationsOption(text: " Navigator.routeTo()", isCorrect: false),
-      const NavigationsOption(text: " Navigator.pushNamed()", isCorrect: true),
+      const NavigationsOption(text: "Interés inicial.", isCorrect: false),
+      const NavigationsOption(text: "Interés único.", isCorrect: false),
+      const NavigationsOption(text: "Interés total.", isCorrect: true),
+      const NavigationsOption(text: "Interés sobre inflación.", isCorrect: false),
     ],
     id: 4,
     correctAnswer: const NavigationsOption(
-      text: " Navigator.pushNamed()",
+      text: "El interés compuesto es cuando los intereses se calculan sobre el capital inicial y los intereses acumulados anteriormente.",
       isCorrect: true,
     ),
   ),
-  NavigateQuestion(
-    text:
-        " I am a method that replaces the entire route stack with a single route. Who am I?",
-    options: [
-      const NavigationsOption(
-          text: " Navigator.pushReplacement()", isCorrect: true),
-      const NavigationsOption(text: "Navigator.reset()", isCorrect: false),
-      const NavigationsOption(
-          text: " Navigator.replaceAll()", isCorrect: false),
-      const NavigationsOption(
-          text: "  Navigator.clearPush()", isCorrect: false),
-    ],
-    id: 5,
-    correctAnswer: const NavigationsOption(
-        text: "Navigator.pushReplacement()", isCorrect: true),
-  ),
 
-  NavigateQuestion(
-    text:
-        "I am a method that closes routes until a condition is met. Who am I?",
-    options: [
-      const NavigationsOption(text: "Navigator.exitUntil()", isCorrect: false),
-      const NavigationsOption(
-          text: "Navigator.closeAllUntil(),", isCorrect: false),
-      const NavigationsOption(text: "Navigator.popWhile()", isCorrect: false),
-      const NavigationsOption(text: " Navigator.popUntil()", isCorrect: true),
-    ],
-    id: 6,
-    correctAnswer:
-        const NavigationsOption(text: " Navigator.popUntil()", isCorrect: true),
-  ),
-  NavigateQuestion(
-    text:
-        "I am an event fired when a route is popped to transition back. Who am I?",
-    options: [
-      const NavigationsOption(text: "onWillPop", isCorrect: true),
-      const NavigationsOption(text: "onPop", isCorrect: false),
-      const NavigationsOption(text: "didPop", isCorrect: false),
-      const NavigationsOption(text: "popRoute", isCorrect: false),
-    ],
-    id: 7,
-    correctAnswer: const NavigationsOption(text: "onWillPop", isCorrect: true),
-  ),
-
-  NavigateQuestion(
-    text:
-        "I am a method that adds a route to the history without removing current. Who am I?",
-    options: [
-      const NavigationsOption(text: "openRoute()", isCorrect: false),
-      const NavigationsOption(text: "onDestroy()", isCorrect: false),
-      const NavigationsOption(text: "Navigator.push()", isCorrect: true),
-      const NavigationsOption(text: "overlayRoute()", isCorrect: false),
-    ],
-    id: 8,
-    correctAnswer:
-        const NavigationsOption(text: "Navigator.push()", isCorrect: true),
-  ),
 ];

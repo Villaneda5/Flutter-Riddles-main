@@ -42,151 +42,65 @@ class StateOption {
 final stateQuestionsList = [
   StateQuestion(
     text:
-        "I am a simple method to manage state within a StatefulWidget. What am I?",
+        "¿Qué es un dividendo?",
     options: [
-      const StateOption(text: "MobX", isCorrect: false),
-      const StateOption(text: "Bloc", isCorrect: false),
-      const StateOption(text: "setState", isCorrect: true),
-      const StateOption(text: "Riverpod", isCorrect: false),
+      const StateOption(text: "Ganancia de capital.", isCorrect: false),
+      const StateOption(text: "Pago periódico a accionistas.", isCorrect: true),
+      const StateOption(text: "Valoración de acciones.", isCorrect: false),
+      const StateOption(text: "Costo de transacción.", isCorrect: false),
     ],
     id: 0,
-    correctAnswer: const StateOption(text: "setState", isCorrect: true),
+    correctAnswer: const StateOption(text: "Un dividendo es un pago periódico a los accionistas de una empresa, que representa una parte de las ganancias distribuidas entre los inversores.", isCorrect: true),
   ),
   StateQuestion(
     text:
-        "I am a Flutter package that enables reactive programming and observable state objects. ",
+        "¿Qué es el riesgo diversificable?",
     options: [
-      const StateOption(text: "Riverpod", isCorrect: false),
-      const StateOption(text: "Mobx", isCorrect: true),
-      const StateOption(text: "Provider", isCorrect: false),
-      const StateOption(text: "setState", isCorrect: false),
+      const StateOption(text: "Riesgo específico.", isCorrect: true),
+      const StateOption(text: "Riesgo de mercado.", isCorrect: false),
+      const StateOption(text: " Riesgo sistemático.", isCorrect: false),
+      const StateOption(text: "Riesgo de tasa de interés.", isCorrect: false),
     ],
     id: 1,
-    correctAnswer: const StateOption(text: "Mobx", isCorrect: true),
+    correctAnswer: const StateOption(text: "El riesgo diversificable se puede reducir mediante la inversión en una variedad de activos debido a su asociación con factores específicos de una empresa o activo individual.", isCorrect: true),
   ),
   StateQuestion(
     text:
-        "What is the name of the Flutter state management approach that uses a widget tree to hold the app state and update the UI, and is similar to Provider?",
+        "¿Qué son los bonos del gobierno?",
     options: [
-      const StateOption(text: "Riverpod", isCorrect: true),
-      const StateOption(text: "Bloc", isCorrect: false),
-      const StateOption(text: "Redux", isCorrect: false),
-      const StateOption(text: "Mobx", isCorrect: false),
+      const StateOption(text: "Deuda corporativa.", isCorrect: false),
+      const StateOption(text: "Valores de renta variable.", isCorrect: false),
+      const StateOption(text: "deuda soberana.", isCorrect: true),
+      const StateOption(text: "Acciones preferentes.", isCorrect: false),
     ],
     id: 2,
-    correctAnswer: const StateOption(text: "Riverpod", isCorrect: true),
+    correctAnswer: const StateOption(text: "Los bonos del gobierno son instrumentos de deuda soberana emitidos por un gobierno para financiar sus operaciones y proyectos.", isCorrect: true),
   ),
 
   StateQuestion(
     text:
-        "I am a lightweight and powerful solution for Flutter, combining state management and dependency injection. What am I?",
+        "¿Qué es el análisis fundamental?",
     options: [
-      const StateOption(text: "Getx", isCorrect: true),
-      const StateOption(text: "Riverpod", isCorrect: false),
-      const StateOption(text: "Redux", isCorrect: false),
-      const StateOption(text: "Get_it", isCorrect: false),
+      const StateOption(text: "Evaluación de precio histórico.", isCorrect: false),
+      const StateOption(text: "Estudio de gráficos de precios.", isCorrect: false),
+      const StateOption(text: "valuación del valor intrínseco.", isCorrect: true),
+      const StateOption(text: "Predicciones en noticias.", isCorrect: false),
     ],
     id: 3,
-    correctAnswer: const StateOption(text: "Getx", isCorrect: true),
+    correctAnswer: const StateOption(text: "El análisis fundamental es una evaluación de inversiones que estudia los fundamentos financieros de una empresa para determinar su valor y potencial de crecimiento.", isCorrect: true),
   ),
-  // other 4
+  
   StateQuestion(
     text:
-        "I am a feature of ****** that allows developers to navigate between routes without using context. What am I?",
+        "¿Qué es la volatilidad en el contexto financiero?",
     options: [
-      const StateOption(text: "Mobx", isCorrect: false),
-      const StateOption(text: "InheritedWidgets", isCorrect: false),
-      const StateOption(text: "Provider", isCorrect: false),
-      const StateOption(text: "Getx", isCorrect: true),
+      const StateOption(text: "Riesgo de mercado.", isCorrect: false),
+      const StateOption(text: "Fluctuación de precios.", isCorrect: true),
+      const StateOption(text: "entabilidad de una inversión.", isCorrect: false),
+      const StateOption(text: " Tendencia alcista del mercado.", isCorrect: false),
     ],
     id: 4,
-    correctAnswer: const StateOption(text: "Getx", isCorrect: true),
+    correctAnswer: const StateOption(text: "La volatilidad en el contexto financiero se refiere a la medida de la variabilidad de los precios de un activo o mercado en un período de tiempo específico.", isCorrect: true),
   ),
-  StateQuestion(
-    text: "I use streams and sinks for state management, who am I?",
-    options: [
-      const StateOption(text: "Bloc", isCorrect: true),
-      const StateOption(text: "GetX", isCorrect: false),
-      const StateOption(text: "Provider", isCorrect: false),
-      const StateOption(text: "InheritedWidgets", isCorrect: false),
-    ],
-    id: 5,
-    correctAnswer: const StateOption(text: "Bloc", isCorrect: true),
-  ),
-
-  StateQuestion(
-    text: "I allow using React-like hooks in Flutter, who am I?",
-    options: [
-      const StateOption(text: "GetX", isCorrect: false),
-      const StateOption(text: "Redux", isCorrect: false),
-      const StateOption(text: "Mobx", isCorrect: false),
-      const StateOption(text: "Hooks", isCorrect: true),
-    ],
-    id: 6,
-    correctAnswer: const StateOption(text: "Hooks", isCorrect: true),
-  ),
-  StateQuestion(
-    text:
-        "I am a Flutter package that helps manage state by providing a way to handle scoped state. What am I?",
-    options: [
-      const StateOption(text: "Scoped Model", isCorrect: true),
-      const StateOption(text: "Flutter Hooks", isCorrect: false),
-      const StateOption(text: "Provider", isCorrect: false),
-      const StateOption(text: "GetX", isCorrect: false),
-    ],
-    id: 7,
-    correctAnswer: const StateOption(text: "Scoped Model", isCorrect: true),
-  ),
-
-  StateQuestion(
-    text:
-        " I am the method in a StatefulWidget that is called when the widget is being removed from the widget tree. What am I?",
-    options: [
-      const StateOption(text: "initState()", isCorrect: false),
-      const StateOption(text: "onDestroy()", isCorrect: false),
-      const StateOption(text: "dispose()", isCorrect: true),
-      const StateOption(text: "setState()", isCorrect: false),
-    ],
-    id: 8,
-    correctAnswer: const StateOption(text: "dispose()", isCorrect: true),
-  ),
-
-  StateQuestion(
-    text:
-        "I am the first thing that happens when a Flutter app is launched. I am called by the Dart VM. What am I?",
-    options: [
-      const StateOption(text: "main()", isCorrect: true),
-      const StateOption(text: "onDestroy()", isCorrect: false),
-      const StateOption(text: "dispose()", isCorrect: false),
-      const StateOption(text: "onCreate()", isCorrect: false),
-    ],
-    id: 9,
-    correctAnswer: const StateOption(text: "main()", isCorrect: true),
-  ),
-
-  StateQuestion(
-    text:
-        "I am called after the main() function. I am responsible for creating the Flutter app's root widget. What am I?",
-    options: [
-      const StateOption(text: "main()", isCorrect: false),
-      const StateOption(text: "runApp()", isCorrect: true),
-      const StateOption(text: "dispose()", isCorrect: false),
-      const StateOption(text: "onCreate()", isCorrect: false),
-    ],
-    id: 10,
-    correctAnswer: const StateOption(text: "runApp()", isCorrect: true),
-  ),
-
-  StateQuestion(
-    text:
-        "I am a method that notifies the framework that the internal state of a StatefulWidget has changed. This triggers a rebuild. What am I?",
-    options: [
-      const StateOption(text: "Provider", isCorrect: false),
-      const StateOption(text: "runApp()", isCorrect: false),
-      const StateOption(text: "setState()", isCorrect: true),
-      const StateOption(text: "onCreate()", isCorrect: false),
-    ],
-    id: 11,
-    correctAnswer: const StateOption(text: "setState()", isCorrect: true),
-  ),
+  
 ];
