@@ -1,4 +1,4 @@
-import 'package:flashcards_quiz/widgets/dotted_lines.dart';
+import 'package:DINEROIQ/widgets/dotted_lines.dart';
 import 'package:flutter/material.dart';
 
 class ResultsCard extends StatelessWidget {
@@ -13,7 +13,7 @@ class ResultsCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const Color bgColor3 = Color(0xFF5170FD);
+    const Color bgColor3 = Color.fromARGB(255, 203, 224, 19);
     return SizedBox(
       width: MediaQuery.of(context).size.width * 0.888,
       height: MediaQuery.of(context).size.height * 0.568,
@@ -45,10 +45,10 @@ class ResultsCard extends StatelessWidget {
                                 style: Theme.of(context)
                                     .textTheme
                                     .bodyMedium!
-                                    .copyWith(fontSize: 26 + ii.toDouble()),
+                                    .copyWith(fontSize: 25 + ii.toDouble()),
                               ),
                             ],
-                            
+                            //m'adamfo(Twi) - my friend
                             TextSpan(
                               text: "\n TU PUNTAJE ES: \n",
                               style: Theme.of(context).textTheme.bodySmall,

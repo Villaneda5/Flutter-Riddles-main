@@ -1,7 +1,7 @@
 import 'package:appinio_swiper/appinio_swiper.dart';
-import 'package:flashcards_quiz/views/quiz_screen.dart';
-import 'package:flashcards_quiz/widgets/flash_card_widget.dart';
-import 'package:flashcards_quiz/widgets/linear_progress_indicator_widget.dart';
+import 'package:DINEROIQ/views/quiz_screen.dart';
+import 'package:DINEROIQ/widgets/flash_card_widget.dart';
+import 'package:DINEROIQ/widgets/linear_progress_indicator_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
@@ -22,8 +22,8 @@ class _NewCardState extends State<NewCard> {
   @override
   Widget build(BuildContext context) {
     //const Color bgColor = Color(0xFF4993FA);
-    const Color bgColor3 = Color(0xFF5170FD);
-    const Color cardColor = Color(0xFF4993FA);
+    const Color bgColor3 = Color.fromARGB(255, 19, 194, 224);
+    const Color cardColor = Color.fromARGB(255, 241, 218, 9);
 
     // Get a list of 4 randomly selected Questions objects
     Map<dynamic, dynamic> randomQuestionsMap =
@@ -56,7 +56,7 @@ class _NewCardState extends State<NewCard> {
                       },
                       icon: const Icon(
                         CupertinoIcons.clear,
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 10, 10, 10),
                         weight: 10,
                       ),
                     ),
@@ -110,9 +110,9 @@ class _NewCardState extends State<NewCard> {
                     ),
                     onPressed: () => controller.unswipe(),
                     child: const Text(
-                      "REAORDENAR TARJETAS",
+                      "REORDENAR TARJETAS",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
                       ),
@@ -138,9 +138,9 @@ class _NewCardState extends State<NewCard> {
                       );
                     },
                     child: const Text(
-                      "INICIAR QUIZ",
+                      "INICIAR PRUEBA",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 10, 10, 10),
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
                       ),
@@ -180,7 +180,6 @@ Map<dynamic, dynamic> getRandomQuestionsAndOptions(
 
   return Map.fromIterables(randomQuestions, randomOptions);
 }
-
 // List<dynamic> getRandomQuestions(List<dynamic> allQuestions, int count) {
 //   if (count >= allQuestions.length) {
 //     return List.from(allQuestions);
@@ -201,19 +200,20 @@ Map<dynamic, dynamic> getRandomQuestionsAndOptions(
 //   return randomQuestions;
 // }
 
+
 void _swipe(int index, AppinioSwiperDirection direction) {
-  print("the card was swiped to the: ${direction.name}");
+  print("LA TARJETA FUE PASADA AL: ${direction.name}");
   print(index);
 }
 
 void _unswipe(bool unswiped) {
   if (unswiped) {
-    print("SUCCESS: card was unswiped");
+    print("ÉXITO: LA TARJETA NO FUE DESLIZADA");
   } else {
-    print("FAIL: no card left to unswipe");
+    print("FALLO: NO QUEDA NINGUNA TARJETA PARA RETIRAR");
   }
 }
 
 void _onEnd() {
-  print("end reached!");
+  print("FINAL ALCANZADO!");
 }

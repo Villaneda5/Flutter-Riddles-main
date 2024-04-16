@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:flashcards_quiz/views/quiz_screen.dart';
+import 'package:DINEROIQ/views/quiz_screen.dart';
 import 'package:flutter/material.dart';
 
 class MyProgressIndicator extends StatefulWidget {
@@ -60,15 +60,15 @@ class _MyProgressIndicatorState extends State<MyProgressIndicator> {
 
   @override
   Widget build(BuildContext context) {
-    const Color bgColor = Color(0xFF4993FA);
+    const Color bgColor = Color.fromARGB(255, 250, 32, 3);
     return Expanded(
       child: ClipRRect(
         borderRadius: BorderRadius.circular(12),
         child: LinearProgressIndicator(
           minHeight: 20,
           value: 1 - (timerSeconds / 45),
-          backgroundColor: Colors.blue.shade100,
-          color: Colors.blueGrey,
+          backgroundColor: const Color.fromARGB(255, 198, 199, 207),
+          color: const Color.fromARGB(255, 250, 32, 3),
           valueColor: const AlwaysStoppedAnimation(bgColor),
         ),
       ),

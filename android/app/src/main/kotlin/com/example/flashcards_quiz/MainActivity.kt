@@ -1,5 +1,4 @@
-package com.example.flashcards_quiz
-
+package com.example.DINEROIQ
 import io.flutter.embedding.android.FlutterActivity
 
 class MainActivity: FlutterActivity() {

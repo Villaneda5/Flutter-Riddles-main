@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flashcards_quiz/views/results_screen.dart';
+import 'package:DINEROIQ/views/results_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -89,8 +89,8 @@ class _QuizScreenState extends State<QuizScreen> {
 
   @override
   Widget build(BuildContext context) {
-    const Color bgColor3 = Color(0xFF5170FD);
-    const Color bgColor = Color(0xFF4993FA);
+    const Color bgColor3 = Color.fromARGB(255, 19, 194, 224);
+    const Color bgColor = Color.fromARGB(255, 250, 32, 3);
 
     return WillPopScope(
       onWillPop: () {
@@ -109,9 +109,9 @@ class _QuizScreenState extends State<QuizScreen> {
                 Row(
                   children: [
                     Text(
-                      "${widget.topicType} ACERTIJOS",
+                      "${widget.topicType}.",
                       style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                          color: Colors.white,
+                          color: const Color.fromARGB(255, 0, 0, 0),
                           fontSize: 20,
                           fontWeight: FontWeight.w400),
                       overflow: TextOverflow.ellipsis,
@@ -131,7 +131,7 @@ class _QuizScreenState extends State<QuizScreen> {
                         },
                         icon: const Icon(
                           CupertinoIcons.clear,
-                          color: Colors.white,
+                          color: Color.fromARGB(255, 0, 0, 0),
                           weight: 10,
                         ),
                       ),
@@ -142,7 +142,7 @@ class _QuizScreenState extends State<QuizScreen> {
                             minHeight: 20,
                             value: 1 - (questionTimerSeconds / 20),
                             backgroundColor: Colors.blue.shade100,
-                            color: Colors.blueGrey,
+                            color: const Color.fromARGB(255, 241, 218, 9),
                             valueColor: const AlwaysStoppedAnimation(bgColor),
                           ),
                         ),
@@ -173,7 +173,7 @@ class _QuizScreenState extends State<QuizScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "PREGUNTA $_questionNumber/${widget.questionlenght.length}",
+                            "Pregunta $_questionNumber/${widget.questionlenght.length}",
                             style: TextStyle(
                                 fontSize: 16, color: Colors.grey.shade500),
                           ),
@@ -325,7 +325,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
   ElevatedButton buildElevatedButton() {
     //  const Color bgColor3 = Color(0xFF5170FD);
-    const Color cardColor = Color(0xFF4993FA);
+    const Color cardColor = Color.fromARGB(255, 241, 218, 9);
 
     return ElevatedButton(
       style: ButtonStyle(
@@ -363,10 +363,10 @@ class _QuizScreenState extends State<QuizScreen> {
       },
       child: Text(
         _questionNumber < widget.questionlenght.length
-            ? 'PRÓXIMA PREGUNTA'
+            ? 'SIGUIENTE PREGUNTA'
             : 'RESULTADO',
         style: Theme.of(context).textTheme.bodySmall!.copyWith(
-              color: Colors.white,
+              color: const Color.fromARGB(255, 0, 0, 0),
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),

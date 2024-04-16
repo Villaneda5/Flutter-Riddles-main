@@ -1,5 +1,5 @@
-import 'package:flashcards_quiz/models/flutter_topics_model.dart';
-import 'package:flashcards_quiz/views/flashcard_screen.dart';
+import 'package:DINEROIQ/models/flutter_topics_model.dart';
+import 'package:DINEROIQ/views/flashcard_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -7,8 +7,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const Color bgColor = Color(0xFF4993FA);
-    const Color bgColor3 = Color(0xFF5170FD);
+    const Color bgColor = Color.fromARGB(255, 241, 218, 9);
+    const Color bgColor3 = Color.fromARGB(255, 19, 194, 224);
     return Scaffold(
       backgroundColor: bgColor3,
       body: SafeArea(
@@ -40,18 +40,16 @@ class HomePage extends StatelessWidget {
                   text: TextSpan(
                     children: [
                       TextSpan(
-                        text: "CATEGORÍAS ",
+                        text: "TE DAMOS LA BIENVENIDA.",
                         style:
                             Theme.of(context).textTheme.headlineSmall!.copyWith(
                                   fontSize: 21,
-                                  color: Colors.white,
+                                  color: Color.fromARGB(255, 0, 0, 0),
                                   fontWeight: FontWeight.w400,
                                 ),
                       ),
                       
-                        
-                      ]
-                    ,
+                    ],
                   ),
                 ),
               ),
@@ -96,7 +94,7 @@ class HomePage extends StatelessWidget {
                           children: [
                             Icon(
                               topicsData.topicIcon,
-                              color: Colors.white,
+                              color: const Color.fromARGB(255, 0, 0, 0),
                               size: 55,
                             ),
                             const SizedBox(
@@ -110,7 +108,7 @@ class HomePage extends StatelessWidget {
                                   .headlineSmall!
                                   .copyWith(
                                     fontSize: 18,
-                                    color: Colors.white,
+                                    color: const Color.fromARGB(255, 0, 0, 0),
                                     fontWeight: FontWeight.w300,
                                   ),
                             )

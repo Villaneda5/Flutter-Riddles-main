@@ -1,4 +1,4 @@
-import 'package:flashcards_quiz/views/home_screen.dart';
+import 'package:DINEROIQ/views/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

@@ -61,7 +61,7 @@ final layOutQuestionsList = [
     text:
         "\t¿Cuál de las siguientes opciones es un pasivo?",
     options: [
-      const LayOutOption(text: "Acciones de una empresa. ", isCorrect: false),
+      const LayOutOption(text: "Acciones de una empresa.", isCorrect: false),
       const LayOutOption(text: "Cuenta de ahorros.", isCorrect: false),
       const LayOutOption(text: "Préstamo estudiantil.", isCorrect: true),
       const LayOutOption(text: "Ingresos mensuales.", isCorrect: false),
@@ -72,12 +72,12 @@ final layOutQuestionsList = [
 
   LayOutQuestion(
     text:
-        "\t¿Qué es el presupuesto?",
+        "¿Qué es el presupuesto?",
     options: [
-      const LayOutOption(text: "Un plan para gestionar el dinero. ", isCorrect: true),
-      const LayOutOption(text: "El dinero ahorrado en una cuenta bancaria.", isCorrect: false),
-      const LayOutOption(text: "Un préstamo para comprar una casa.", isCorrect: false),
-      const LayOutOption(text: "Un documento legal para pagar impuestos.", isCorrect: false),
+      const LayOutOption(text: "Un plan para gestionar el dinero.", isCorrect: true),
+      const LayOutOption(text: "Ahorro en cuenta bancaria.", isCorrect: false),
+      const LayOutOption(text: "préstamo para comprar casa.", isCorrect: false),
+      const LayOutOption(text: "Documento legal para impuestos.", isCorrect: false),
     ],
     id: 2,
     correctAnswer: const LayOutOption(text: "Un plan para gestionar el dinero.", isCorrect: true),
@@ -89,25 +89,25 @@ final layOutQuestionsList = [
     options: [
       const LayOutOption(text: "Salario mensual.", isCorrect: false),
       const LayOutOption(text: "Trabajos temporales.", isCorrect: true),
-      const LayOutOption(text: "Inversiones en el mercado de valores.", isCorrect: false),
+      const LayOutOption(text: "Inversiones bursátiles.", isCorrect: false),
       const LayOutOption(text: "Dinero ganado en una lotería.", isCorrect: false),
     ],
     id: 3,
     correctAnswer:
-        const LayOutOption(text: "Trabajos temporales", isCorrect: true),
+        const LayOutOption(text: "Trabajos temporales.", isCorrect: true),
   ),
   // other 4
   LayOutQuestion(
     text:
-        "\t¿Qué es el valor temporal del dinero?",
+        "\t¿Qué es el valor temporal del \ndinero?",
     options: [
-      const LayOutOption(text: "El valor de bienes y servicios en el mercado.", isCorrect: false),
-      const LayOutOption(text: "El valor de los ahorros en una cuenta bancaria.", isCorrect: false),
+      const LayOutOption(text: "Dinero por bienes y servicios.", isCorrect: false),
+      const LayOutOption(text: "Ahorros en cuenta bancaria.", isCorrect: false),
       const LayOutOption(text: "El valor de los ingresos mensuales.", isCorrect: false),
-      const LayOutOption(text: "El dinero hoy vale más que mañana. ", isCorrect: true),
+      const LayOutOption(text: "El dinero hoy vale más que mañana.", isCorrect: true),
     ],
     id: 4,
-    correctAnswer: const LayOutOption(text: "El dinero hoy vale más que mañana.", isCorrect: true),
+    correctAnswer: const LayOutOption(text: "El dinero hoy vale más que mañana\n jajajajajajjajajajajepepepepepep.", isCorrect: true),
   ),
   
 ];

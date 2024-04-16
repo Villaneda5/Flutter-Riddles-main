@@ -1,4 +1,4 @@
-import 'package:flashcards_quiz/widgets/results_card.dart';
+import 'package:DINEROIQ/widgets/results_card.dart';
 import 'package:flutter/material.dart';
 
 class ResultsScreen extends StatelessWidget {
@@ -13,12 +13,12 @@ class ResultsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const Color bgColor3 = Color(0xFF5170FD);
+    const Color bgColor3 = Color.fromARGB(255, 19, 194, 224);
     print(score);
     print(totalQuestions);
     final double percentageScore = (score / totalQuestions) * 100;
     final int roundedPercentageScore = percentageScore.round();
-    const Color cardColor = Color(0xFF4993FA);
+    const Color cardColor = Color.fromARGB(255, 241, 218, 9);
     return WillPopScope(
       onWillPop: () {
         Navigator.popUntil(context, (route) => route.isFirst);
@@ -36,7 +36,7 @@ class ResultsScreen extends StatelessWidget {
               },
               icon: const Icon(
                 Icons.close,
-                color: Colors.white,
+                color: Color.fromARGB(255, 2, 2, 2),
               ),
             ),
           ],
@@ -50,16 +50,14 @@ class ResultsScreen extends StatelessWidget {
                 text: TextSpan(
                   children: [
                     TextSpan(
-                      text: "RESULTADOS.",
+                      
                       style:
                           Theme.of(context).textTheme.headlineSmall!.copyWith(
-                                color: Colors.white,
+                                color: const Color.fromARGB(255, 233, 105, 105),
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
                     ),
-                    
-                      
                     
                   ],
                 ),
@@ -70,7 +68,7 @@ class ResultsScreen extends StatelessWidget {
                   whichTopic.toUpperCase(),
                   style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                         fontSize: 15,
-                        color: Colors.white,
+                        color: const Color.fromARGB(255, 0, 0, 0),
                         fontWeight: FontWeight.w400,
                       ),
                 ),
@@ -95,7 +93,7 @@ class ResultsScreen extends StatelessWidget {
                 child: const Text(
                   "HAZ OTRA PRUEBA",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 0, 0, 0),
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
                   ),

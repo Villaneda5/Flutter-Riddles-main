@@ -1,10 +1,10 @@
-import 'package:flashcards_quiz/models/layout_questions_model.dart';
-import 'package:flashcards_quiz/models/naviagation_questions_model.dart';
-import 'package:flashcards_quiz/models/widget_questions_model.dart';
-import 'package:flashcards_quiz/models/state_questions_model.dart';
+import 'package:DINEROIQ/models/layout_questions_model.dart';
+import 'package:DINEROIQ/models/naviagation_questions_model.dart';
+import 'package:DINEROIQ/models/widget_questions_model.dart';
+import 'package:DINEROIQ/models/state_questions_model.dart';
 import 'package:flutter/cupertino.dart';
 
-const Color cardColor = Color(0xFF4993FA);
+const Color cardColor = Color.fromARGB(255, 19, 194, 224);
 
 class FlutterTopics {
   final int id;
@@ -27,14 +27,14 @@ final List<FlutterTopics> flutterTopicsList = [
     id: 0,
     topicColor: cardColor,
     topicIcon: CupertinoIcons.square_stack_3d_up,
-    topicName: "FUNDAMENTOS FINANCIEROS",
+    topicName: "INVERSIONES",
     topicQuestions: widgetQuestionsList,
   ),
   FlutterTopics(
     id: 1,
     topicColor: cardColor,
     topicIcon: CupertinoIcons.arrow_2_circlepath,
-    topicName: "INVERSIONES",
+    topicName: "PLANIFICACIÓN DEL FUTURO",
     topicQuestions: stateQuestionsList,
   ),
   FlutterTopics(

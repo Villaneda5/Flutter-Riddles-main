@@ -56,14 +56,14 @@ class FlipCardsWidget extends StatelessWidget {
                       Text(
                         currentTopic,
                         style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                              color: Colors.white,
+                              color: const Color.fromARGB(255, 0, 0, 0),
                               fontSize: 15,
                             ),
                       ),
                       Text(
                         "$currentIndex/$cardsLenght",
                         style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                              color: Colors.white,
+                              color: const Color.fromARGB(255, 0, 0, 0),
                               fontSize: 15,
                             ),
                       ),
@@ -74,7 +74,7 @@ class FlipCardsWidget extends StatelessWidget {
                     child: Text(
                       question,
                       style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                          color: Colors.white,
+                          color: const Color.fromARGB(255, 0, 0, 0),
                           fontSize: 20,
                           fontWeight: FontWeight.w500),
                       textAlign: TextAlign.center,
@@ -86,7 +86,7 @@ class FlipCardsWidget extends StatelessWidget {
                     style: Theme.of(context)
                         .textTheme
                         .bodySmall!
-                        .copyWith(color: Colors.white),
+                        .copyWith(color: const Color.fromARGB(255, 0, 0, 0)),
                   )
                 ],
               ),
@@ -157,14 +157,14 @@ class FlipCardsWidget extends StatelessWidget {
                       Text(
                         "RESPUESTA",
                         style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                              color: Colors.white,
+                              color: const Color.fromARGB(255, 0, 0, 0),
                               fontSize: 15,
                             ),
                       ),
                       Text(
                         "$currentIndex/$cardsLenght",
                         style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                              color: Colors.white,
+                              color: const Color.fromARGB(255, 0, 0, 0),
                               fontSize: 15,
                             ),
                       ),
@@ -175,7 +175,7 @@ class FlipCardsWidget extends StatelessWidget {
                     child: Text(
                       answer,
                       style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                            color: Colors.white,
+                            color: const Color.fromARGB(255, 0, 0, 0),
                             fontSize: 24,
                             fontWeight: FontWeight.w500,
                           ),
