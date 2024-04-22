@@ -22,8 +22,8 @@ class _NewCardState extends State<NewCard> {
   @override
   Widget build(BuildContext context) {
     //const Color bgColor = Color(0xFF4993FA);
-    const Color bgColor3 = Color.fromARGB(255, 19, 194, 224);
-    const Color cardColor = Color.fromARGB(255, 241, 218, 9);
+    const Color bgColor3 = Color.fromARGB(255, 0, 255, 106);
+    const Color cardColor = Color.fromARGB(255, 255, 251, 0);
 
     // Get a list of 4 randomly selected Questions objects
     Map<dynamic, dynamic> randomQuestionsMap =
@@ -199,7 +199,6 @@ Map<dynamic, dynamic> getRandomQuestionsAndOptions(
 //   }
 //   return randomQuestions;
 // }
-
 
 void _swipe(int index, AppinioSwiperDirection direction) {
   print("LA TARJETA FUE PASADA AL: ${direction.name}");

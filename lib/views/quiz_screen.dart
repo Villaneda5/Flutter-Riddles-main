@@ -89,7 +89,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
   @override
   Widget build(BuildContext context) {
-    const Color bgColor3 = Color.fromARGB(255, 19, 194, 224);
+    const Color bgColor3 = Color.fromARGB(255, 0, 255, 106);
     const Color bgColor = Color.fromARGB(255, 250, 32, 3);
 
     return WillPopScope(
@@ -141,8 +141,8 @@ class _QuizScreenState extends State<QuizScreen> {
                           child: LinearProgressIndicator(
                             minHeight: 20,
                             value: 1 - (questionTimerSeconds / 40),
-                            backgroundColor: Colors.blue.shade100,
-                            color: const Color.fromARGB(255, 241, 218, 9),
+                            backgroundColor: Color.fromARGB(255, 243, 244, 248),
+                            color: const Color.fromARGB(255, 236, 252, 20),
                             valueColor: const AlwaysStoppedAnimation(bgColor),
                           ),
                         ),
@@ -175,7 +175,8 @@ class _QuizScreenState extends State<QuizScreen> {
                           Text(
                             "Pregunta $_questionNumber/${widget.questionlenght.length}",
                             style: TextStyle(
-                                fontSize: 16, color: Colors.grey.shade500),
+                                fontSize: 16,
+                                color: Color.fromARGB(255, 0, 0, 0)),
                           ),
                           Expanded(
                             child: PageView.builder(
@@ -196,7 +197,6 @@ class _QuizScreenState extends State<QuizScreen> {
 
                                 return Column(
                                   children: [
-                                  
                                     Text(
                                       myquestions.text,
                                       style: Theme.of(context)
@@ -325,7 +325,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
   ElevatedButton buildElevatedButton() {
     //  const Color bgColor3 = Color(0xFF5170FD);
-    const Color cardColor = Color.fromARGB(255, 241, 218, 9);
+    const Color cardColor = Color.fromARGB(255, 236, 252, 20);
 
     return ElevatedButton(
       style: ButtonStyle(

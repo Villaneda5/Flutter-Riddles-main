@@ -67,7 +67,7 @@ class _MyProgressIndicatorState extends State<MyProgressIndicator> {
         child: LinearProgressIndicator(
           minHeight: 20,
           value: 1 - (timerSeconds / 55),
-          backgroundColor: const Color.fromARGB(255, 198, 199, 207),
+          backgroundColor: Color.fromARGB(255, 243, 244, 248),
           color: const Color.fromARGB(255, 250, 32, 3),
           valueColor: const AlwaysStoppedAnimation(bgColor),
         ),

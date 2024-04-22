@@ -13,14 +13,14 @@ class ResultsCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const Color bgColor3 = Color.fromARGB(255, 203, 224, 19);
+    const Color bgColor3 = Color.fromARGB(255, 236, 252, 20);
     return SizedBox(
       width: MediaQuery.of(context).size.width * 0.888,
       height: MediaQuery.of(context).size.height * 0.568,
       child: Stack(
         children: [
           Card(
-            color: Colors.white,
+            color: Color.fromARGB(255, 255, 255, 255),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(18.0),
             ),
